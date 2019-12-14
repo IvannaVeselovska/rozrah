@@ -28,7 +28,7 @@ public class JavaMailUtil {
             }
         });
 
-        String recepient = "Gokingok@ukr.net";
+        String recepient = "veselka19012001@gmail.com";
         Message message = prepareMessage(session,myAccount,recepient, messageText);
 
         Transport.send(message);

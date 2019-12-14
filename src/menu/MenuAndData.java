@@ -28,7 +28,7 @@ public class MenuAndData {
                 programData();
                 break;
             default:
-                System.out.println("\tYour input is incorrect. Try again, please");
+                log.warning("\tYour input is incorrect. Try again, please");
                 inputData();
                 break;
         }
@@ -51,6 +51,11 @@ public class MenuAndData {
                         Integer.parseInt(arr_of_data[3]), Integer.parseInt(arr_of_data[4]));
                 credits.add(c);
             }
+            Handler console = new ConsoleHandler();
+            console.setFormatter(new MyFormatter());
+            log.setUseParentHandlers(false);
+            log.addHandler(console);
+            log.info("Data downloaded successfully");
         }catch (IOException o){
             Handler console = new ConsoleHandler();
             Handler file = new FileHandler();
