@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0a1baae-9de2-48da-98aa-f68ed2d6b60a" name="Default Changelist" comment="added method myLogger(Logger), changed constructors of some classes">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/ChooseCreditCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/ChooseCreditCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindByMaxSummCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindByMaxSummCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindByPercentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindByPercentCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindByTermCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindByTermCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindCreditByBankCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindCreditByBankCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/PayOffCreditCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/PayOffCreditCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/credit/Credit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/credit/Credit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/credit/Credits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/credit/Credits.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/MenuAndData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/MenuAndData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/myFormatter/MyFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/myFormatter/MyFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/test/TestCredit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/test/TestCredits.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/user/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/user/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/user/Consultant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/user/Consultant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rozrah.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rozrah.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/ChooseCreditCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/ChooseCreditCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/FindByMaxSummCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindByMaxSummCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/FindByPercentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindByPercentCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/FindByTermCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindByTermCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/FindCreditByBankCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindCreditByBankCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/PayOffCreditCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/PayOffCreditCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/credit/Credit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/credit/Credit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/credit/Credits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/credit/Credits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logging/MyLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logging/MyLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/JavaMailUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/JavaMailUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/MenuAndData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/MenuAndData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myFormatter/MyFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myFormatter/MyFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CreditTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestCredits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CreditsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/Consultant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Consultant.java" afterDir="false" />
-    </list>
+    <list default="true" id="e0a1baae-9de2-48da-98aa-f68ed2d6b60a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +190,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576345529860</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ClientTest, logger msg">
+      <created>1576355780742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576355780742</updated>
+    </task>
+    <task id="LOCAL-00004" summary="createLogFunction">
+      <created>1576355898137</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576355898137</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,11 +219,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added some tests" />
     <MESSAGE value="changed loggers finals to private" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed loggers finals to private" />
+    <MESSAGE value="ClientTest, logger msg" />
+    <MESSAGE value="createLogFunction" />
+    <option name="LAST_COMMIT_MESSAGE" value="createLogFunction" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rozrah$TestCredits_findByTerm.ic" NAME="TestCredits.findByTerm Coverage Results" MODIFIED="1576329340470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
