@@ -1,0 +1,8 @@
+PrivatBank HouseOnCredit 17.9 240 2000000
+PrivatBank Collateral 22.9 60 1000000
+PrivatBank Quick 62.27 24 50000
+PrivatBank AutoByInstallments 0.5 84 2000000
+PrivatBank Universal 3.6 84 50000
+MonoBank CreditLimit 3.2 12 10000
+OshchadBank ForElectricCars 0.1 84 10000000
+OshchadBank ForSecondHandCars 19.99 84 1000000
