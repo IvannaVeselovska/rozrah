@@ -1,6 +1,7 @@
 package commands;
 
 import credit.Credits;
+import menu.JavaMailUtil;
 import myFormatter.MyFormatter;
 
 import java.io.IOException;
@@ -10,15 +11,15 @@ import java.util.logging.Handler;
 import java.util.logging.Logger;
 
 public class FindCreditByBankCommand implements Command {
-    public static final Logger log = Logger.getLogger(FindCreditByBankCommand.class.getName());
+    private static final Logger log = Logger.getLogger(FindCreditByBankCommand.class.getName());
     Credits credits;
     public FindCreditByBankCommand(Credits credits) {
         this.credits = credits;
     }
     @Override
-    public void Execute() throws IOException {
+    public void Execute() throws Exception {
         try {
-            credits.FindCreditByBank();
+            credits.findCreditByBank();
         } catch (IOException e) {
             Handler console = new ConsoleHandler();
             Handler file = new FileHandler();
@@ -27,7 +28,9 @@ public class FindCreditByBankCommand implements Command {
             log.setUseParentHandlers(false);
             log.addHandler(console);
             log.addHandler(file);
-            log.info("Input error!");
+            String msg ="Input error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
 }

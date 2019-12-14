@@ -45,7 +45,7 @@ public class Consultant {
 
         try {
             maxSum.Execute();
-        } catch (IOException e) {
+        } catch (Exception e) {
             Handler console = new ConsoleHandler();
             Handler file = new FileHandler();
             console.setFormatter(new MyFormatter());
@@ -61,12 +61,12 @@ public class Consultant {
     public void findCreditByPercent() {
         try {
             percent.Execute();
-        } catch (IOException e) {
+        } catch (Exception e) {
             Handler console = new ConsoleHandler();
             Handler file = null;
             try {
                 file = new FileHandler();
-            } catch (IOException ex) {
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
             console.setFormatter(new MyFormatter());
@@ -81,12 +81,12 @@ public class Consultant {
     public void findCreditByTerm() {
         try {
             term.Execute();
-        } catch (IOException e) {
+        } catch (Exception e) {
             Handler console = new ConsoleHandler();
             Handler file = null;
             try {
                 file = new FileHandler();
-            } catch (IOException ex) {
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
             console.setFormatter(new MyFormatter());
@@ -101,7 +101,7 @@ public class Consultant {
     public void findCreditByBank() throws IOException {
         try {
             bank.Execute();
-        } catch (IOException e) {
+        } catch (Exception e) {
             Handler console = new ConsoleHandler();
             Handler file = new FileHandler();
             console.setFormatter(new MyFormatter());
@@ -116,7 +116,7 @@ public class Consultant {
     public void printAll() throws IOException {
         try {
             printAl.Execute();
-        } catch (IOException e) {
+        } catch (Exception e) {
             Handler console = new ConsoleHandler();
             Handler file = new FileHandler();
             console.setFormatter(new MyFormatter());
@@ -131,7 +131,7 @@ public class Consultant {
     public void chooseCredit() throws IOException {
         try {
             chooseCredit.Execute();
-        } catch (IOException e) {
+        } catch (Exception e) {
             Handler console = new ConsoleHandler();
             Handler file = new FileHandler();
             console.setFormatter(new MyFormatter());
@@ -146,7 +146,7 @@ public class Consultant {
     public void payOffCredit() throws IOException {
         try {
             payOff.Execute();
-        } catch (IOException e) {
+        } catch (Exception e) {
             Handler console = new ConsoleHandler();
             Handler file = new FileHandler();
             console.setFormatter(new MyFormatter());

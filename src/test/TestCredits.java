@@ -26,7 +26,7 @@ public class TestCredits {
                 newlist.add(newcred.getCredits().get(i++));
             } else i++;
         }
-        Assert.assertEquals(newlist,newcred.findCreditsBySum(newcred,20000).getCredits());
+        Assert.assertEquals(newlist,newcred.findSum(newcred,20000).getCredits());
     }
 
     @Test

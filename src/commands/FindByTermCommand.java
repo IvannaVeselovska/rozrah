@@ -1,7 +1,7 @@
 package commands;
 
-import credit.Credit;
 import credit.Credits;
+import menu.JavaMailUtil;
 import myFormatter.MyFormatter;
 
 import java.io.IOException;
@@ -13,16 +13,16 @@ import java.util.logging.Logger;
 
 public class FindByTermCommand implements Command {
 
-    public static final Logger log = Logger.getLogger(FindByTermCommand.class.getName());
+    private static final Logger log = Logger.getLogger(FindByTermCommand.class.getName());
 
     Credits credits;
     public FindByTermCommand(Credits credits) {
         this.credits = credits;
     }
     @Override
-    public void Execute() throws IOException {
+    public void Execute() throws Exception {
         try {
-            credits.FindByTerm();
+            credits.findByTerm();
         } catch (IOException e) {
             Handler console = new ConsoleHandler();
             Handler file = new FileHandler();
@@ -31,7 +31,9 @@ public class FindByTermCommand implements Command {
             log.setUseParentHandlers(false);
             log.addHandler(console);
             log.addHandler(file);
-            log.info("Input error!");
+            String msg ="Input error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
 }

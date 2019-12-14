@@ -1,6 +1,7 @@
 package commands;
 
 import credit.Credits;
+import menu.JavaMailUtil;
 import myFormatter.MyFormatter;
 import user.Client;
 
@@ -12,7 +13,7 @@ import java.util.logging.Handler;
 import java.util.logging.Logger;
 
 public class ChooseCreditCommand implements Command{
-    public static final Logger log = Logger.getLogger(ChooseCreditCommand.class.getName());
+    private static final Logger log = Logger.getLogger(ChooseCreditCommand.class.getName());
     Credits credit;
     Client client;
     public ChooseCreditCommand(Client c, Credits credits) {
@@ -20,7 +21,7 @@ public class ChooseCreditCommand implements Command{
         this.credit = credits;
     }
     @Override
-    public void Execute() throws IOException {
+    public void Execute() throws Exception {
         try {
             client.setClientsCredit(credit);
         } catch (IOException e) {
@@ -31,7 +32,9 @@ public class ChooseCreditCommand implements Command{
             log.setUseParentHandlers(false);
             log.addHandler(console);
             log.addHandler(file);
-            log.info("Input error!");
+            String msg ="Input error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
 }

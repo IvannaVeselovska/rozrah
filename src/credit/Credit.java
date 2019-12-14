@@ -1,7 +1,5 @@
 package credit;
 
-import java.util.Objects;
-
 public class Credit {
 
     private String bank;
@@ -62,12 +60,18 @@ public class Credit {
         this.currentSum = currentSum;
     }
 
+    public int changeCurrentSum(int sum){
+        int newSum = getCurrentSum() + (int)(getCurrentSum() * getPercent()/ 100) - sum;
+        return newSum;
+    }
+
     public void PayOff(int sum) {
-        setCurrentSum(getCurrentSum() + (int)(getCurrentSum() * getPercent()/ 100) - sum);
+        setCurrentSum(changeCurrentSum(sum));
         curr_term++;
         if ((getCurrentSum() > 0) && (termInMounths - curr_term) <= 0) {
             System.out.println("you didn't repay the loan on time\n Your debt = " + getCurrentSum());
             percentRise();
+            System.out.println("Your percent rised to " + getPercent() + "%");
         }
         else if ((getCurrentSum() <= 0) && (termInMounths - curr_term) == 0) {
             System.out.println("You are repay the loan on time");
@@ -78,9 +82,10 @@ public class Credit {
     public String getCreditName() {
         return creditName;
     }
-    public void percentRise(){
-        setPercent(getPercent()*0.1);
-        System.out.println("Your percent rised to " + getPercent() + "%");
+    public double percentRise(){
+        setPercent(getPercent() + getPercent()*0.1);
+        double newPersent = getPercent();
+        return newPersent;
     }
 
     public void setCreditName(String creditName) {

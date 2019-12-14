@@ -6,6 +6,6 @@ import java.util.logging.LogRecord;
 public class MyFormatter extends Formatter {
     @Override
     public String format(LogRecord record) {
-        return record.getLevel() + ": " + record.getLoggerName() + " " + record.getSourceMethodName() + " " + record.getMessage();
+        return record.getLevel() + ": In :" + record.getLoggerName() + " method: " + record.getSourceMethodName() + " \n" + record.getMessage() + "\n";
     }
 }

@@ -8,6 +8,6 @@ public class PrintAllCommand implements Command {
     }
     @Override
     public void Execute(){
-        credits.PrintAll();
+        credits.printAll();
     }
 }

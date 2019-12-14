@@ -3,15 +3,13 @@ package main;
 import menu.JavaMailUtil;
 import menu.MenuAndData;
 
-import java.io.IOException;
-
 /**
  * @author Ivanna Veselovska
  */
 
 public class Main {
     public static void main(String[] args) throws Exception {
-            JavaMailUtil.sendMail("HALOO");
+           //JavaMailUtil.sendMail("HALOO");
              MenuAndData.inputData();
     }
 }

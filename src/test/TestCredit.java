@@ -6,12 +6,24 @@ import org.junit.Test;
 
 public class TestCredit {
     @Test
-    public void PayOff() {
-        Credit c1 = new Credit();
-        c1.PayOff(100);
-        Credit c = new Credit();
-        c.setCurrentSum(c.getCurrentSum() + (int)(c.getCurrentSum() * c.getPercent()/ 100) - 100);
-        Assert.assertEquals(c.getCurrentSum(),c1.getCurrentSum());
+    public void percentRise() {
+        Credit credit = new Credit();
+        credit.percentRise();
+        double rezult = credit.getPercent();
+        Credit credit1 = new Credit();
+        credit1.setPercent(credit1.getPercent() + credit1.getPercent()*0.1);
+
+        Assert.assertEquals(credit1.getPercent(),rezult,0.0001);
+    }
+
+    @Test
+    public void changeCurrentSum(){
+        Credit credit = new Credit();
+        credit.setCurrentSum(1000);
+        int rezult = credit.changeCurrentSum(1000);
+        credit.setCurrentSum(1000);
+        int expected = (int)(credit.getCurrentSum()+(int)credit.getCurrentSum()*credit.getPercent()/100 - 1000);
+        Assert.assertEquals(expected,rezult);
     }
 
 }

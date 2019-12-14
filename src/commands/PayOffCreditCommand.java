@@ -1,5 +1,6 @@
 package commands;
 
+import menu.JavaMailUtil;
 import myFormatter.MyFormatter;
 import user.Client;
 
@@ -10,7 +11,7 @@ import java.util.logging.Handler;
 import java.util.logging.Logger;
 
 public class PayOffCreditCommand implements Command{
-    public static final Logger log = Logger.getLogger(PayOffCreditCommand.class.getName());
+    private static final Logger log = Logger.getLogger(PayOffCreditCommand.class.getName());
 
     Client client;
 
@@ -18,7 +19,7 @@ public class PayOffCreditCommand implements Command{
         this.client = client;
     }
     @Override
-    public void Execute() throws IOException {
+    public void Execute() throws Exception {
         try {
             client.PayOff();
         } catch (IOException e) {
@@ -29,7 +30,9 @@ public class PayOffCreditCommand implements Command{
             log.setUseParentHandlers(false);
             log.addHandler(console);
             log.addHandler(file);
-            log.info("Input error!");
+            String msg ="Input error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
 
     }

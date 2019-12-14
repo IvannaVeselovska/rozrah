@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 
 public class Credits {
 
-    public static final Logger log = Logger.getLogger(Credit.class.getName());
+    private static final Logger log = Logger.getLogger(Credit.class.getName());
 
     private List<Credit> credits;
 
@@ -42,7 +42,7 @@ public class Credits {
         this.credits = credits;
     }
 
-    public Credits  findCreditsBySum(Credits cre, int sum)
+    public Credits findSum(Credits cre, int sum)
     {
         List<Credit> newlist = new LinkedList<>();
         int i = 0;
@@ -54,12 +54,12 @@ public class Credits {
             return new Credits(newlist);
     }
 
-    public void FindBySum() throws IOException {
+    public void findBySum() throws IOException {
         try{
              Scanner sc = new Scanner(System.in);
              System.out.println("Input the sum you are looking for: ");
              int sum = sc.nextInt();
-            System.out.println(findCreditsBySum(this,sum));
+            System.out.println(findSum(this,sum));
         }
         catch (Exception O){
             Handler console = new ConsoleHandler();
@@ -69,7 +69,7 @@ public class Credits {
             log.setUseParentHandlers(false);
             log.addHandler(console);
             log.addHandler(file);
-            log.info("Input error!");
+            log.warning("Input error!");
         }
     }
     public Credits findPer(Credits cre,double percent){
@@ -83,7 +83,7 @@ public class Credits {
         }
         return new Credits(newlist);
     }
-    public void FindByPercent() throws IOException{
+    public void findByPercent() throws IOException{
         try{
             Scanner sc = new Scanner(System.in);
             System.out.println("Input the percent you are looking for: ");
@@ -99,10 +99,10 @@ public class Credits {
             log.setUseParentHandlers(false);
             log.addHandler(console);
             log.addHandler(file);
-            log.info("Input error!");
+            log.warning("Input error!");
         }
     }
-    public void PrintAll(){
+    public void printAll(){
         System.out.println(this);
     }
     public Credits findBank(Credits cre,String bank){
@@ -116,7 +116,7 @@ public class Credits {
         }
         return new Credits(newlist);
     }
-    public void FindCreditByBank() throws IOException {
+    public void findCreditByBank() throws IOException {
         try {
             Scanner sc = new Scanner(System.in);
             System.out.println("Input the bank you are looking for: ");
@@ -131,7 +131,7 @@ public class Credits {
             log.setUseParentHandlers(false);
             log.addHandler(console);
             log.addHandler(file);
-            log.info("Input error!");
+            log.warning("Input error!");
         }
     }
     public Credits findTerm(Credits cre,int term){
@@ -145,7 +145,7 @@ public class Credits {
         }
         return new Credits(newlist);
     }
-    public void FindByTerm() throws IOException {
+    public void findByTerm() throws IOException {
         try {
             Scanner sc = new Scanner(System.in);
             System.out.println("Input the term you are looking for: ");
@@ -160,7 +160,7 @@ public class Credits {
             log.setUseParentHandlers(false);
             log.addHandler(console);
             log.addHandler(file);
-            log.info("Input error!");
+            log.warning("Input error!");
         }
     }
 }

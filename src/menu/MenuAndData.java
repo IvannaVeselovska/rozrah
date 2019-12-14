@@ -15,26 +15,37 @@ import java.util.Scanner;
 import java.util.logging.*;
 
 public class MenuAndData {
-    public static final Logger log = Logger.getLogger(MenuAndData.class.getName());
+    private static final Logger log = Logger.getLogger(MenuAndData.class.getName());
     public static void inputData() throws IOException {
-        System.out.println("\tChoose data sourse for credits(1 - file; 2 - program)");
-        Scanner sc = new Scanner(System.in);
-        int choise = sc.nextInt();
-        switch (choise){
-            case 1 :
-                readFromFile();
-                break;
-            case 2:
-                programData();
-                break;
-            default:
-                log.warning("\tYour input is incorrect. Try again, please");
-                inputData();
-                break;
+        try {
+            System.out.println("\tChoose data sourse for credits(1 - file; 2 - program)");
+            Scanner sc = new Scanner(System.in);
+            int choise = sc.nextInt();
+            switch (choise) {
+                case 1:
+                    readFromFile();
+                    break;
+                case 2:
+                    programData();
+                    break;
+                default:
+                    log.warning("\tYour input is incorrect. Try again, please");
+                    inputData();
+                    break;
+            }
+        }catch (Exception o){
+            Handler console = new ConsoleHandler();
+            Handler file = new FileHandler();
+            console.setFormatter(new MyFormatter());
+            file.setFormatter(new MyFormatter());
+            log.setUseParentHandlers(false);
+            log.addHandler(console);
+            log.addHandler(file);
+            log.warning("Input from command error!");
         }
 
     }
-    public static void readFromFile() throws IOException {
+    public static void readFromFile() throws Exception {
         List<Credit> credits = new LinkedList<>();
         try {
             Scanner sc;
@@ -56,6 +67,7 @@ public class MenuAndData {
             log.setUseParentHandlers(false);
             log.addHandler(console);
             log.info("Data downloaded successfully");
+
         }catch (IOException o){
             Handler console = new ConsoleHandler();
             Handler file = new FileHandler();
@@ -64,13 +76,14 @@ public class MenuAndData {
             log.setUseParentHandlers(false);
             log.addHandler(console);
             log.addHandler(file);
-            log.warning("Input from file error!");
+            log.severe("Input from file error!");
         }
+
         Credits credits1 = new Credits(credits);
         customerServise(credits1);
 
     }
-    public static void programData() throws IOException {
+    public static void programData() throws Exception {
         List<Credit> credits = new LinkedList<>();
         credits.add(new Credit("PrivatBank", "HouseOnCredit", 17.9, 240, 2000000));
         credits.add(new Credit("PrivatBank", "Collateral", 22.9, 60, 1000000));
@@ -84,7 +97,7 @@ public class MenuAndData {
         Credits credits1 = new Credits(credits);
         customerServise(credits1);
     }
-    public static void customerServise(Credits credits) throws IOException {
+    public static void customerServise(Credits credits) throws Exception {
         Consultant consultant;
         Client client = new Client();
         consultant = new Consultant(new FindByMaxSummCommand(credits),new FindByPercentCommand(credits),
@@ -93,7 +106,7 @@ public class MenuAndData {
         menu(consultant,client);
 
     }
-    public static void menu(Consultant consultant, Client client) throws IOException {
+    public static void menu(Consultant consultant, Client client) throws Exception {
         try {
             Scanner sc = new Scanner(System.in);
             int idOfCommand = -1;
@@ -145,7 +158,9 @@ public class MenuAndData {
             log.setUseParentHandlers(false);
             log.addHandler(console);
             log.addHandler(file);
-            log.warning("Input command error");
+            String msg ="Input command error";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
     public static void help(){
