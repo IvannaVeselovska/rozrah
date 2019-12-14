@@ -1,24 +1,21 @@
 package credit;
 
-import myFormatter.MyFormatter;
+import logging.MyLogger;
+import menu.JavaMailUtil;
 
-import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.logging.ConsoleHandler;
-import java.util.logging.FileHandler;
-import java.util.logging.Handler;
 import java.util.logging.Logger;
 
 public class Credits {
 
-    private static final Logger log = Logger.getLogger(Credit.class.getName());
+    private static final Logger log = Logger.getLogger(Credits.class.getName());
 
     private List<Credit> credits;
 
     public Credits(List<Credit> credits) {
-        this.credits = credits;
+        setCredits(credits);
     }
 
     public List<Credit> getCredits() {
@@ -54,7 +51,7 @@ public class Credits {
             return new Credits(newlist);
     }
 
-    public void findBySum() throws IOException {
+    public void findBySum() throws Exception {
         try{
              Scanner sc = new Scanner(System.in);
              System.out.println("Input the sum you are looking for: ");
@@ -62,14 +59,10 @@ public class Credits {
             System.out.println(findSum(this,sum));
         }
         catch (Exception O){
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.warning("Input error!");
+            MyLogger.myLogger(log);
+            String msg ="In :" + log.getName() + " method: findBySum \n" +"Input sum error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
     public Credits findPer(Credits cre,double percent){
@@ -83,7 +76,7 @@ public class Credits {
         }
         return new Credits(newlist);
     }
-    public void findByPercent() throws IOException{
+    public void findByPercent() throws Exception {
         try{
             Scanner sc = new Scanner(System.in);
             System.out.println("Input the percent you are looking for: ");
@@ -92,31 +85,28 @@ public class Credits {
 
         }
         catch (Exception O){
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.warning("Input error!");
+            MyLogger.myLogger(log);
+            String msg ="In :" + log.getName() + " method: findByPercent \n" +"Input percent error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
     public void printAll(){
         System.out.println(this);
     }
+
     public Credits findBank(Credits cre,String bank){
-        List<Credit> newlist = new LinkedList<>();
+        List<Credit> newList = new LinkedList<>();
         int i = 0;
         while(i < cre.getCredits().size()){
             if((bank.equals(cre.getCredits().get(i).getBank()))) {
-                newlist.add(cre.getCredits().get(i++));
+                newList.add(cre.getCredits().get(i++));
             }
             else i++;
         }
-        return new Credits(newlist);
+        return new Credits(newList);
     }
-    public void findCreditByBank() throws IOException {
+    public void findCreditByBank() throws Exception {
         try {
             Scanner sc = new Scanner(System.in);
             System.out.println("Input the bank you are looking for: ");
@@ -124,28 +114,25 @@ public class Credits {
             System.out.println(findBank(this,bank));
         }
         catch (Exception O){
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.warning("Input error!");
+            MyLogger.myLogger(log);
+            String msg ="In :" + log.getName() + " method: findByBank \n" +"Input bank error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
+
     public Credits findTerm(Credits cre,int term){
-        List<Credit> newlist = new LinkedList<>();
+        List<Credit> newList = new LinkedList<>();
         int i = 0;
         while(i < cre.getCredits().size()){
             if(term <= cre.getCredits().get(i).getTermInMounths()) {
-                newlist.add(cre.getCredits().get(i++));
+                newList.add(cre.getCredits().get(i++));
             }
             else i++;
         }
-        return new Credits(newlist);
+        return new Credits(newList);
     }
-    public void findByTerm() throws IOException {
+    public void findByTerm() throws Exception {
         try {
             Scanner sc = new Scanner(System.in);
             System.out.println("Input the term you are looking for: ");
@@ -153,14 +140,10 @@ public class Credits {
             System.out.println(findTerm(this,term));
         }
         catch (Exception O){
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.warning("Input error!");
+            MyLogger.myLogger(log);
+            String msg ="In :" + log.getName() + " method: findByTerm \n" +"Input term error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
 }

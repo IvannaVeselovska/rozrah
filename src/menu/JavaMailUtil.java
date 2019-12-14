@@ -11,7 +11,6 @@ import java.util.logging.Logger;
 
 public class JavaMailUtil {
     public static void sendMail(String messageText) throws Exception {
-        System.out.println("hello, i'll send message!");
         Properties properties = new Properties();
         properties.put("mail.smtp.auth","true");
         properties.put("mail.smtp.starttls.enable","true");
@@ -32,6 +31,8 @@ public class JavaMailUtil {
         Message message = prepareMessage(session,myAccount,recepient, messageText);
 
         Transport.send(message);
+
+        System.out.println("Message was sent to " + recepient);
     }
 
     private static Message prepareMessage(Session session, String myAccount, String recepient, String messageText) {
@@ -39,9 +40,9 @@ public class JavaMailUtil {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(myAccount));
             message.setRecipient(Message.RecipientType.TO,new InternetAddress(recepient));
-            message.setSubject("sending email...");
-            String htmlCode;
-            message.setText(messageText);
+            message.setSubject("New message from aplication");
+            String htmlCode = "<h1> Java aplication error!! </h1> <br/> <h2><b>"+messageText+"</b></h2>";
+            message.setContent(htmlCode,"text/html");
             return message;
         }catch(Exception ex){
             Logger.getLogger(JavaMailUtil.class.getName()).log(Level.SEVERE, null,ex);

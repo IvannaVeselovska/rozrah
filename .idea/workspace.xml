@@ -1,46 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0a1baae-9de2-48da-98aa-f68ed2d6b60a" name="Default Changelist" comment="Added some tests">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="e0a1baae-9de2-48da-98aa-f68ed2d6b60a" name="Default Changelist" comment="added method myLogger(Logger), changed constructors of some classes">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/ClientTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/ChooseCreditCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/ChooseCreditCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/Command.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindByMaxSummCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindByMaxSummCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindByPercentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindByPercentCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindByTermCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindByTermCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindCreditByBankCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindCreditByBankCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/PayOffCreditCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/PayOffCreditCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/PrintAllCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/PrintAllCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/credit/Credit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/credit/Credit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/credit/Credits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/credit/Credits.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/logging/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/logging/logging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/MenuAndData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/MenuAndData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/myFormatter/MyFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/myFormatter/MyFormatter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/test/TestCredit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/test/TestCredit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/test/TestCredits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/test/TestCredits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/test/TestCredit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/test/TestCredits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/user/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/user/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/user/Consultant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/user/Consultant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rozrah.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rozrah.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/ChooseCreditCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/ChooseCreditCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/FindByMaxSummCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindByMaxSummCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/FindByPercentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindByPercentCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/FindByTermCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindByTermCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/FindCreditByBankCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindCreditByBankCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/PayOffCreditCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/PayOffCreditCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/PrintAllCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/PrintAllCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/credit/Credit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/credit/Credit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/credit/Credits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/credit/Credits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logging/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/logging/logging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logging/MyLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logging/MyLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menu/JavaMailUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/JavaMailUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menu/MenuAndData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/MenuAndData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myFormatter/MyFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myFormatter/MyFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestCredit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestCredits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestCredits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CreditTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestCredits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CreditsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/user/Consultant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Consultant.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,8 +53,8 @@
       <list>
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -72,8 +68,11 @@
     <option name="defaultAccountId" value="fd390b9b-aea0-4f34-8b9a-c2650bd8d0a4" />
   </component>
   <component name="ProjectId" id="1UZnJYIQ2bZcvI1QpdgD3329URn" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="true" />
     <property name="Repository.Attach.JavaDocs" value="true" />
@@ -93,6 +92,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="test" />
       <recent name="credit" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -111,7 +111,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCredit">
+  <component name="RunManager" selected="JUnit.test in rozrah">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="rozrah" />
@@ -126,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCredit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rozrah" />
       <extension name="coverage">
         <pattern>
@@ -135,13 +135,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestCredit" />
+      <option name="MAIN_CLASS_NAME" value="test.ClientTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCredits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreditTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rozrah" />
       <extension name="coverage">
         <pattern>
@@ -150,13 +150,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestCredits" />
+      <option name="MAIN_CLASS_NAME" value="test.CreditTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCredits.findByTerm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreditsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rozrah" />
       <extension name="coverage">
         <pattern>
@@ -165,14 +165,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestCredits" />
-      <option name="METHOD_NAME" value="findByTerm" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="test.CreditsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCredits.findCreditByBank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test in rozrah" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rozrah" />
       <extension name="coverage">
         <pattern>
@@ -181,27 +180,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestCredits" />
-      <option name="METHOD_NAME" value="findCreditByBank" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.TestCredits" />
-      <item itemvalue="JUnit.TestCredits.findCreditByBank" />
-      <item itemvalue="JUnit.TestCredits.findByTerm" />
-      <item itemvalue="JUnit.TestCredit" />
+      <item itemvalue="JUnit.CreditsTest" />
+      <item itemvalue="JUnit.CreditTest" />
+      <item itemvalue="JUnit.ClientTest" />
+      <item itemvalue="JUnit.test in rozrah" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestCredit" />
+        <item itemvalue="JUnit.test in rozrah" />
+        <item itemvalue="JUnit.ClientTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.TestCredits" />
-        <item itemvalue="JUnit.TestCredits.findByTerm" />
-        <item itemvalue="JUnit.TestCredits.findCreditByBank" />
+        <item itemvalue="JUnit.CreditTest" />
+        <item itemvalue="JUnit.CreditsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576334109320</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="changed loggers finals to private">
+      <created>1576345529860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576345529860</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,10 +242,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added some tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some tests" />
+    <MESSAGE value="changed loggers finals to private" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed loggers finals to private" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rozrah$TestCredits_findByTerm.ic" NAME="TestCredits.findByTerm Coverage Results" MODIFIED="1576329340470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-public class TestCredits {
+public class CreditsTest {
 
     @Test
     public void findBySum() {

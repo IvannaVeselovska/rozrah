@@ -1,13 +1,10 @@
 package commands;
 
 import credit.Credits;
+import logging.MyLogger;
 import menu.JavaMailUtil;
-import myFormatter.MyFormatter;
 
 import java.io.IOException;
-import java.util.logging.ConsoleHandler;
-import java.util.logging.FileHandler;
-import java.util.logging.Handler;
 import java.util.logging.Logger;
 
 public class FindCreditByBankCommand implements Command {
@@ -21,13 +18,7 @@ public class FindCreditByBankCommand implements Command {
         try {
             credits.findCreditByBank();
         } catch (IOException e) {
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
+            MyLogger.myLogger(log);
             String msg ="Input error!";
             log.severe(msg);
             JavaMailUtil.sendMail(msg);

@@ -4,7 +4,7 @@ import credit.Credit;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TestCredit {
+public class CreditTest {
     @Test
     public void percentRise() {
         Credit credit = new Credit();

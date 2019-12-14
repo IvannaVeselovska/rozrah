@@ -2,6 +2,8 @@ package user;
 
 import commands.*;
 import credit.Credit;
+import logging.MyLogger;
+import menu.JavaMailUtil;
 import myFormatter.MyFormatter;
 
 import java.io.IOException;
@@ -32,129 +34,85 @@ public class Consultant {
         this.chooseCredit = choose;
         this.payOff = payOff;
     }
-    public Consultant(Command maxSum, Command percent, Command term, Command bank, Command printAl) {
-        this.maxSum = maxSum;
-        this.percent = percent;
-        this.term = term;
-        this.bank = bank;
-        this.printAl = printAl;
-    }
+
     
 
-    public void findCreditByMaxSum() throws IOException {
+    public void findCreditByMaxSum() throws Exception {
 
         try {
             maxSum.Execute();
         } catch (Exception e) {
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.info("Input error!");
+            MyLogger.myLogger(log);
+            String msg ="Input sum error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
 
     }
 
-    public void findCreditByPercent() {
+    public void findCreditByPercent() throws Exception {
         try {
             percent.Execute();
         } catch (Exception e) {
-            Handler console = new ConsoleHandler();
-            Handler file = null;
-            try {
-                file = new FileHandler();
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.info("Input error!");
+            MyLogger.myLogger(log);
+            String msg ="Input credit error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
 
-    public void findCreditByTerm() {
+    public void findCreditByTerm() throws Exception {
         try {
             term.Execute();
         } catch (Exception e) {
-            Handler console = new ConsoleHandler();
-            Handler file = null;
-            try {
-                file = new FileHandler();
-            } catch (Exception ex) {
-                ex.printStackTrace();
-            }
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.info("Input error!");
+            MyLogger.myLogger(log);
+            String msg = "Input term error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
 
-    public void findCreditByBank() throws IOException {
+    public void findCreditByBank() throws Exception {
         try {
             bank.Execute();
         } catch (Exception e) {
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.info("Input error!");
+            MyLogger.myLogger(log);
+            String msg ="Input bank error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
 
-    public void printAll() throws IOException {
+    public void printAll() throws Exception {
         try {
             printAl.Execute();
         } catch (Exception e) {
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.info("Input error!");
+            MyLogger.myLogger(log);
+            String msg ="Input error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
 
-    public void chooseCredit() throws IOException {
+    public void chooseCredit() throws Exception {
         try {
             chooseCredit.Execute();
         } catch (Exception e) {
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.info("Input error!");
+            MyLogger.myLogger(log);
+            String msg ="Input credit number error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
 
-    public void payOffCredit() throws IOException {
+    public void payOffCredit() throws Exception {
         try {
             payOff.Execute();
         } catch (Exception e) {
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.info("Input error!");
+            MyLogger.myLogger(log);
+            String msg ="Input pay sum error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
     }
 }

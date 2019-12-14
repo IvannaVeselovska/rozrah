@@ -18,31 +18,21 @@ public class Credit {
                 " UAH";
     }
 
-
     public Credit(String bank, String creditName, double percent, int termInMounths, int maxSumOfCredit) {
-        this.bank = bank;
-        this.creditName = creditName;
-        this.percent = percent;
-        this.termInMounths = termInMounths;
-        this.maxSumOfCredit = maxSumOfCredit;
-        this.curr_term = 0;
-    }
-
-    public Credit(String name){
-        this.bank = "unknown";
-        this.creditName = name;
-        this.percent = 20.7;
-        this.termInMounths = 24;
-        this.maxSumOfCredit = 50000;
+        setBank(bank);
+        setCreditName(creditName);
+        setPercent(percent);
+        setTermInMounths(termInMounths);
+        setMaxSumOfCredit(maxSumOfCredit);
         this.curr_term = 0;
     }
 
     public Credit() {
-        this.bank = "unknown";
-        this.creditName = "creditName";
-        this.percent = 20.7;
-        this.termInMounths = 24;
-        this.maxSumOfCredit = 50000;
+        setBank("unknown");
+        setCreditName("unknown");
+        setPercent(20.7);
+        setTermInMounths(24);
+        setMaxSumOfCredit(50000);
         this.curr_term = 0;
     }
     public String getBank() {

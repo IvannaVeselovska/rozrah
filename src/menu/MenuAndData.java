@@ -3,6 +3,7 @@ package menu;
 import commands.*;
 import credit.Credit;
 import credit.Credits;
+import logging.MyLogger;
 import myFormatter.MyFormatter;
 import user.Client;
 import user.Consultant;
@@ -16,7 +17,7 @@ import java.util.logging.*;
 
 public class MenuAndData {
     private static final Logger log = Logger.getLogger(MenuAndData.class.getName());
-    public static void inputData() throws IOException {
+    public static void inputData() throws Exception {
         try {
             System.out.println("\tChoose data sourse for credits(1 - file; 2 - program)");
             Scanner sc = new Scanner(System.in);
@@ -34,14 +35,10 @@ public class MenuAndData {
                     break;
             }
         }catch (Exception o){
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.warning("Input from command error!");
+            MyLogger.myLogger(log);
+            String msg ="In :" + log.getName() + " method: inputData \n" +"Input command error!";
+            log.severe(msg);
+            JavaMailUtil.sendMail(msg);
         }
 
     }
@@ -66,17 +63,13 @@ public class MenuAndData {
             console.setFormatter(new MyFormatter());
             log.setUseParentHandlers(false);
             log.addHandler(console);
-            log.info("Data downloaded successfully");
+            log.info(": Data downloaded successfully");
 
         }catch (IOException o){
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            log.severe("Input from file error!");
+            MyLogger.myLogger(log);
+            String msg ="In :" + log.getName() + " method: readFromFile \n" +"Read file error!";
+            log.severe(msg);
+           JavaMailUtil.sendMail(msg);
         }
 
         Credits credits1 = new Credits(credits);
@@ -151,14 +144,8 @@ public class MenuAndData {
                 }
             }
         }catch (Exception o){
-            Handler console = new ConsoleHandler();
-            Handler file = new FileHandler();
-            console.setFormatter(new MyFormatter());
-            file.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
-            log.addHandler(file);
-            String msg ="Input command error";
+            MyLogger.myLogger(log);
+            String msg ="In :" + log.getName() + " method: menu \n" +"Input command error" ;
             log.severe(msg);
             JavaMailUtil.sendMail(msg);
         }
