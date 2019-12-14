@@ -4,12 +4,7 @@ import commands.*;
 import credit.Credit;
 import logging.MyLogger;
 import menu.JavaMailUtil;
-import myFormatter.MyFormatter;
 
-import java.io.IOException;
-import java.util.logging.ConsoleHandler;
-import java.util.logging.FileHandler;
-import java.util.logging.Handler;
 import java.util.logging.Logger;
 
 public class Consultant {

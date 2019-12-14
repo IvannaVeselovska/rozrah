@@ -1,6 +1,5 @@
 package main;
 
-import menu.JavaMailUtil;
 import menu.MenuAndData;
 
 /**
@@ -9,7 +8,6 @@ import menu.MenuAndData;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-           //JavaMailUtil.sendMail("HALOO");
              MenuAndData.inputData();
     }
 }

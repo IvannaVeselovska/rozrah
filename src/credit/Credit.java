@@ -105,6 +105,4 @@ public class Credit {
     public void setMaxSumOfCredit(int maxSumOfCredit) {
         this.maxSumOfCredit = maxSumOfCredit;
     }
-
-
 }

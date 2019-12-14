@@ -1,6 +1,5 @@
 package menu;
 
-
 import javax.mail.*;
 import javax.mail.Message;
 import javax.mail.internet.InternetAddress;

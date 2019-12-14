@@ -4,7 +4,7 @@ import commands.*;
 import credit.Credit;
 import credit.Credits;
 import logging.MyLogger;
-import myFormatter.MyFormatter;
+import logging.MyFormatter;
 import user.Client;
 import user.Consultant;
 
@@ -154,5 +154,4 @@ public class MenuAndData {
         System.out.println("\t\t---HELP---\n1 - Find credit by max sum\n2 - Find credit by percent\n3 - Find credit by term\n4 - Find credit by bank\n" +
                 "5 - Print all available credits\n6 - Choose your credit(inpur number of credit)\n7 - Pay off your credit");
     }
-
 }

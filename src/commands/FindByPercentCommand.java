@@ -3,7 +3,6 @@ package commands;
 import credit.Credits;
 import logging.MyLogger;
 import menu.JavaMailUtil;
-import myFormatter.MyFormatter;
 
 import java.io.IOException;
 import java.util.logging.Logger;
