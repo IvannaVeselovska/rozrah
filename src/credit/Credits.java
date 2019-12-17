@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
-public class Credits {
+public class  Credits {
 
     private static final Logger log = Logger.getLogger(Credits.class.getName());
 
@@ -53,6 +53,8 @@ public class Credits {
 
     public void findBySum() throws Exception {
         try{
+            MyLogger.myLogger(log);
+
              Scanner sc = new Scanner(System.in);
              System.out.println("Input the sum you are looking for: ");
              int sum = sc.nextInt();

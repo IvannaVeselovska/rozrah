@@ -2,13 +2,11 @@ package logging;
 
 import menu.JavaMailUtil;
 
-import java.util.logging.ConsoleHandler;
-import java.util.logging.FileHandler;
-import java.util.logging.Handler;
-import java.util.logging.Logger;
+import java.util.logging.*;
 
 public class MyLogger {
     public static void myLogger(Logger log) throws Exception {
+        LogManager.getLogManager().readConfiguration();
         Handler console = new ConsoleHandler();
         Handler file = null;
         try {

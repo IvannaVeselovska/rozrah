@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a1baae-9de2-48da-98aa-f68ed2d6b60a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/java0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loggingInfo0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loggingInfo0.log.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/FindByPercentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindByPercentCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/credit/Credit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/credit/Credit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindByPercentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindByPercentCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/credit/Credits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/credit/Credits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/logging/MyLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/logging/MyLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/logging/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/logging/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/MenuAndData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/MenuAndData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/myFormatter/MyFormatter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/test/ClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/test/ClientTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/user/Consultant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/user/Consultant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/credit/Credits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/credit/Credits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logging/MyLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logging/MyLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/JavaMailUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/JavaMailUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/MenuAndData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/MenuAndData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myFormatter/MyFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logging/MyFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/Consultant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Consultant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logging/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/logging/logging.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ClientTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,11 +97,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CreditsTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="rozrah" />
-      <option name="VM_PARAMETERS" value="-Djava.util.logging.config.file=C\Users\Xiaomi\Documents\GitHub\rozrah\src\logging\logging.properties" />
+      <option name="VM_PARAMETERS" value="-Djava.util.logging.config.file=\Users\Xiaomi\Documents\GitHub\rozrah\src\logging\logging.properties" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.*" />
@@ -111,6 +122,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.ClientTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreditTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rozrah" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CreditTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,34 +173,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test in rozrah" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rozrah" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.ClientTest" />
-      <item itemvalue="JUnit.test in rozrah" />
       <item itemvalue="JUnit.CreditsTest.findBySum" />
       <item itemvalue="JUnit.CreditsTest" />
+      <item itemvalue="JUnit.CreditTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CreditsTest" />
-        <item itemvalue="JUnit.CreditsTest.findBySum" />
-        <item itemvalue="JUnit.test in rozrah" />
-        <item itemvalue="JUnit.ClientTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CreditTest" />
+        <item itemvalue="JUnit.CreditsTest" />
+        <item itemvalue="JUnit.ClientTest" />
+        <item itemvalue="JUnit.CreditsTest.findBySum" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576355987253</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=".">
+      <created>1576365889774</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1576365889774</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,7 +258,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
