@@ -1,2 +1,2 @@
-SEVERE: In :menu.MenuAndData method: inputData 
-Input command error!
+SEVERE: In :user.Client method: payOff 
+Input pay sum error!

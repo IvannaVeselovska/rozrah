@@ -47,7 +47,7 @@ public class Credit {
     }
 
     public void setCurrentSum(int currentSum) throws Exception {
-        if(currentSum>0 && currentSum <= maxSumOfCredit){
+        if(currentSum <= maxSumOfCredit){
             this.currentSum = currentSum;
         }
         else throw new Exception();

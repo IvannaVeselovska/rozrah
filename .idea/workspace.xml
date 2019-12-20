@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e0a1baae-9de2-48da-98aa-f68ed2d6b60a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logging/MyLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logging/MyLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/MenuAndData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/MenuAndData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user/Consultant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Consultant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java0.log" beforeDir="false" afterPath="$PROJECT_DIR$/java0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/logging/MyLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/logging/MyLogger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/MenuAndData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/MenuAndData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/test/ClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/test/ClientTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/user/Consultant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/user/Consultant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/credit/Credit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/credit/Credit.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -249,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576870216204</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=".">
+      <created>1576871192284</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1576871192284</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,6 +286,32 @@
     <MESSAGE value="name changed" />
     <MESSAGE value="." />
     <option name="LAST_COMMIT_MESSAGE" value="." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/credit/Credit.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/credit/Credit.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/user/Client.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/user/Client.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/rozrah$TestCredits_findByTerm.ic" NAME="TestCredits.findByTerm Coverage Results" MODIFIED="1576329340470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
