@@ -23,14 +23,11 @@ public class  Credits {
     }
 
 
-    public Credits() {
-    }
-
     @Override
     public String toString() {
         String rezult = "Credits{\n";
         int i = 0; ;
-        while(i < credits.size()) rezult += credits.get(i++).toString() + '\n';
+        while(i < credits.size()) rezult += (i+1)+ "\t" + credits.get(i++).toString() + '\n';
 
         return rezult + '}';
     }
@@ -53,7 +50,8 @@ public class  Credits {
 
     public void findBySum() throws Exception {
         try{
-            MyLogger.myLogger(log);
+            MyLogger.myInfoLogger(log);
+            log.info(": Finding by sum");
 
              Scanner sc = new Scanner(System.in);
              System.out.println("Input the sum you are looking for: ");
@@ -61,7 +59,7 @@ public class  Credits {
             System.out.println(findSum(this,sum));
         }
         catch (Exception O){
-            MyLogger.myLogger(log);
+            MyLogger.mySevereLogger(log);
             String msg ="In :" + log.getName() + " method: findBySum \n" +"Input sum error!";
             log.severe(msg);
             JavaMailUtil.sendMail(msg);
@@ -80,6 +78,8 @@ public class  Credits {
     }
     public void findByPercent() throws Exception {
         try{
+            MyLogger.myInfoLogger(log);
+            log.info(": Finding by percent");
             Scanner sc = new Scanner(System.in);
             System.out.println("Input the percent you are looking for: ");
             double percent = sc.nextDouble();
@@ -87,7 +87,7 @@ public class  Credits {
 
         }
         catch (Exception O){
-            MyLogger.myLogger(log);
+            MyLogger.mySevereLogger(log);
             String msg ="In :" + log.getName() + " method: findByPercent \n" +"Input percent error!";
             log.severe(msg);
             JavaMailUtil.sendMail(msg);
@@ -110,13 +110,15 @@ public class  Credits {
     }
     public void findCreditByBank() throws Exception {
         try {
+            MyLogger.myInfoLogger(log);
+            log.info(": Finding by bank");
             Scanner sc = new Scanner(System.in);
             System.out.println("Input the bank you are looking for: ");
             String bank = sc.nextLine();
             System.out.println(findBank(this,bank));
         }
         catch (Exception O){
-            MyLogger.myLogger(log);
+            MyLogger.mySevereLogger(log);
             String msg ="In :" + log.getName() + " method: findByBank \n" +"Input bank error!";
             log.severe(msg);
             JavaMailUtil.sendMail(msg);
@@ -136,13 +138,15 @@ public class  Credits {
     }
     public void findByTerm() throws Exception {
         try {
+            MyLogger.myInfoLogger(log);
+            log.info(": Finding by term");
             Scanner sc = new Scanner(System.in);
             System.out.println("Input the term you are looking for: ");
             int term = sc.nextInt();
             System.out.println(findTerm(this,term));
         }
         catch (Exception O){
-            MyLogger.myLogger(log);
+            MyLogger.mySevereLogger(log);
             String msg ="In :" + log.getName() + " method: findByTerm \n" +"Input term error!";
             log.severe(msg);
             JavaMailUtil.sendMail(msg);

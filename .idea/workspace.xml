@@ -2,25 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0a1baae-9de2-48da-98aa-f68ed2d6b60a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loggingInfo0.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loggingInfo0.log.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java0.log.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/ChooseCreditCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/ChooseCreditCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindByMaxSummCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindByMaxSummCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindByPercentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindByPercentCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindByTermCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindByTermCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/FindCreditByBankCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/FindCreditByBankCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/PayOffCreditCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/PayOffCreditCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/commands/PrintAllCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/commands/PrintAllCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/credit/Credit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/credit/Credit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/credit/Credits.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/credit/Credits.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/logging/MyLogger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/logging/MyLogger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/logging/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/logging/logging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/JavaMailUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/menu/MenuAndData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/menu/MenuAndData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/myFormatter/MyFormatter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rozrah/test/ClientTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/test/ClientTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/test/CreditTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/test/CreditTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rozrah/user/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/user/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/rozrah/user/Consultant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rozrah/user/Consultant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/ChooseCreditCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/ChooseCreditCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/FindByMaxSummCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindByMaxSummCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/FindByPercentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindByPercentCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/FindByTermCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindByTermCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/FindCreditByBankCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/FindCreditByBankCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/PayOffCreditCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/PayOffCreditCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/PrintAllCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/PrintAllCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/credit/Credit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/credit/Credit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/credit/Credits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/credit/Credits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/logging/MyLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/logging/MyLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logging/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/logging/logging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/MenuAndData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/MenuAndData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/CreditTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/CreditTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user/Consultant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/user/Consultant.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -250,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576365889774</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=".">
+      <created>1576588141243</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576588141243</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -46,8 +46,12 @@ public class Credit {
         return currentSum;
     }
 
-    public void setCurrentSum(int currentSum) {
-        this.currentSum = currentSum;
+    public void setCurrentSum(int currentSum) throws Exception {
+        if(currentSum>0 && currentSum <= maxSumOfCredit){
+            this.currentSum = currentSum;
+        }
+        else throw new Exception();
+
     }
 
     public int changeCurrentSum(int sum){
@@ -55,7 +59,7 @@ public class Credit {
         return newSum;
     }
 
-    public void PayOff(int sum) {
+    public void payOff(int sum) throws Exception {
         setCurrentSum(changeCurrentSum(sum));
         curr_term++;
         if ((getCurrentSum() > 0) && (termInMounths - curr_term) <= 0) {

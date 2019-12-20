@@ -5,7 +5,7 @@ import menu.JavaMailUtil;
 import java.util.logging.*;
 
 public class MyLogger {
-    public static void myLogger(Logger log) throws Exception {
+    public static void mySevereLogger(Logger log) throws Exception {
         LogManager.getLogManager().readConfiguration();
         Handler console = new ConsoleHandler();
         Handler file = null;
@@ -23,4 +23,10 @@ public class MyLogger {
         log.addHandler(file);
     }
 
+    public static void myInfoLogger(Logger log){
+        Handler console = new ConsoleHandler();
+        console.setFormatter(new MyFormatter());
+        log.setUseParentHandlers(false);
+        log.addHandler(console);
+    }
 }

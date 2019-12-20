@@ -39,10 +39,12 @@ public class Client {
             System.out.println("Input the sum of refund(balance = " +
                      getCurrentBalance() + " ): ");
             int pay_sum = sc.nextInt();
-            clientsCredit.PayOff(pay_sum);
+            clientsCredit.payOff(pay_sum);
+            MyLogger.myInfoLogger(log);
+            log.info(": Payed off successfully");
         }
         catch (Exception O){
-            MyLogger.myLogger(log);
+            MyLogger.mySevereLogger(log);
             String msg ="In :" + log.getName() + " method: payOff \n" +"Input pay sum error!";
             log.severe(msg);
             JavaMailUtil.sendMail(msg);
@@ -55,17 +57,21 @@ public class Client {
             Scanner s = new Scanner(System.in);
             System.out.println("Input the number of credit: ");
             int i = s.nextInt();
-            if (i >= credits.getCredits().size()|| i < 0) throw  new Exception();
-            this.clientsCredit = credits.getCredits().get(i);
+            if (i > credits.getCredits().size()|| i <= 0) throw  new Exception();
+            this.clientsCredit = credits.getCredits().get(i-1);
             System.out.println("Input the sum of the loan: ");
             int sum = s.nextInt();
             this.clientsCredit.setCurrentSum(sum);
+            MyLogger.myInfoLogger(log);
+            log.info(": Credit added successfully");
         }
         catch (Exception O){
-            MyLogger.myLogger(log);
+            MyLogger.mySevereLogger(log);
             String msg ="In :" + log.getName() + " method: setClientsCredit \n" +"Input credit number error!";
             log.severe(msg);
             JavaMailUtil.sendMail(msg);
+            System.out.println("Try again!");
+            setClientsCredit(credits);
         }
     }
 }

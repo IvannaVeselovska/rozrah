@@ -35,10 +35,11 @@ public class MenuAndData {
                     break;
             }
         }catch (Exception o){
-            MyLogger.myLogger(log);
+            MyLogger.mySevereLogger(log);
             String msg ="In :" + log.getName() + " method: inputData \n" +"Input command error!";
             log.severe(msg);
             JavaMailUtil.sendMail(msg);
+            inputData();
         }
 
     }
@@ -59,21 +60,18 @@ public class MenuAndData {
                         Integer.parseInt(arr_of_data[3]), Integer.parseInt(arr_of_data[4]));
                 credits.add(c);
             }
-            Handler console = new ConsoleHandler();
-            console.setFormatter(new MyFormatter());
-            log.setUseParentHandlers(false);
-            log.addHandler(console);
+            MyLogger.myInfoLogger(log);
             log.info(": Data downloaded successfully");
 
         }catch (IOException o){
-            MyLogger.myLogger(log);
+            MyLogger.mySevereLogger(log);
             String msg ="In :" + log.getName() + " method: readFromFile \n" +"Read file error!";
             log.severe(msg);
            JavaMailUtil.sendMail(msg);
         }
 
         Credits credits1 = new Credits(credits);
-        customerServise(credits1);
+        menu(credits1);
 
     }
     public static void programData() throws Exception {
@@ -87,51 +85,55 @@ public class MenuAndData {
         credits.add(new Credit("OshchadBank", "ForElectricCars", 0.1, 84, 10000000));
         credits.add(new Credit("OshchadBank", "ForSecondHandCars", 19.99, 84, 1000000));
 
+        MyLogger.myInfoLogger(log);
+        log.info(": Data added successfully");
+
         Credits credits1 = new Credits(credits);
-        customerServise(credits1);
+        menu(credits1);
     }
-    public static void customerServise(Credits credits) throws Exception {
+
+    public static void menu(Credits credits) throws Exception {
         Consultant consultant;
         Client client = new Client();
-        consultant = new Consultant(new FindByMaxSummCommand(credits),new FindByPercentCommand(credits),
-                new FindByTermCommand(credits),new FindCreditByBankCommand(credits),new PrintAllCommand(credits),
-                new ChooseCreditCommand(client,credits),new PayOffCreditCommand(client));
-        menu(consultant,client);
-
-    }
-    public static void menu(Consultant consultant, Client client) throws Exception {
         try {
             Scanner sc = new Scanner(System.in);
             int idOfCommand = -1;
             int k = 0;
             help();
             while (idOfCommand != 0) {
-                System.out.print("\tEnter command(8 - help): ");
+                System.out.print("\tEnter command(8 - help, other - exit): ");
                 idOfCommand = sc.nextInt();
                 switch (idOfCommand) {
                     case (1):
-                        consultant.findCreditByMaxSum();
-
+                        consultant = new Consultant(new FindByMaxSummCommand(credits));
+                        consultant.execute();
                         break;
                     case (2):
-                        consultant.findCreditByPercent();
+                        consultant = new Consultant(new FindByPercentCommand(credits));
+                        consultant.execute();
                         break;
                     case (3):
-                        consultant.findCreditByTerm();
+                        consultant = new Consultant(new FindByTermCommand(credits));
+                        consultant.execute();
                         break;
                     case (4):
-                        consultant.findCreditByBank();
+                        consultant = new Consultant(new FindCreditByBankCommand(credits));
+                        consultant.execute();
                         break;
                     case (5):
-                        consultant.printAll();
+                        consultant = new Consultant(new PrintAllCommand(credits));
+                        consultant.execute();
                         break;
                     case (6):
-                        consultant.chooseCredit();
+                        consultant = new Consultant(new ChooseCreditCommand(client,credits));
+                        consultant.execute();
                         k++;
                         break;
                     case (7):
-                        if (k != 0)
-                            consultant.payOffCredit();
+                        if (k != 0) {
+                            consultant = new Consultant(new PayOffCreditCommand(client));
+                            consultant.execute();
+                        }
                         else System.out.println("\tChoose a credit first");
                         break;
                     case (8):
@@ -143,11 +145,13 @@ public class MenuAndData {
                         break;
                 }
             }
+            System.out.println("Goodbye!");
         }catch (Exception o){
-            MyLogger.myLogger(log);
+            MyLogger.mySevereLogger(log);
             String msg ="In :" + log.getName() + " method: menu \n" +"Input command error" ;
             log.severe(msg);
             JavaMailUtil.sendMail(msg);
+            menu(credits);
         }
     }
     public static void help(){

@@ -17,11 +17,11 @@ public class ChooseCreditCommand implements Command{
         this.credit = credits;
     }
     @Override
-    public void Execute() throws Exception {
+    public void execute() throws Exception {
         try {
             client.setClientsCredit(credit);
         } catch (IOException e) {
-            MyLogger.myLogger(log);
+            MyLogger.mySevereLogger(log);
             String msg ="Input error!";
             log.severe(msg);
             JavaMailUtil.sendMail(msg);

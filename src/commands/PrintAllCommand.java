@@ -7,7 +7,7 @@ public class PrintAllCommand implements Command {
         this.credits = credits;
     }
     @Override
-    public void Execute(){
+    public void execute(){
         credits.printAll();
     }
 }

@@ -17,7 +17,7 @@ public class CreditTest {
     }
 
     @Test
-    public void changeCurrentSum(){
+    public void changeCurrentSum() throws Exception {
         Credit credit = new Credit();
         credit.setCurrentSum(1000);
         int rezult = credit.changeCurrentSum(1000);

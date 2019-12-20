@@ -17,11 +17,11 @@ public class FindByTermCommand implements Command {
         this.credits = credits;
     }
     @Override
-    public void Execute() throws Exception {
+    public void execute() throws Exception {
         try {
             credits.findByTerm();
         } catch (IOException e) {
-            MyLogger.myLogger(log);
+            MyLogger.mySevereLogger(log);
             String msg ="Input error!";
             log.severe(msg);
             JavaMailUtil.sendMail(msg);
