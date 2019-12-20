@@ -10,7 +10,6 @@ public class Consultant {
 
     private Command command;
 
-
     public Consultant(Command command) {
         this.command = command;
     }
@@ -18,6 +17,4 @@ public class Consultant {
     public void execute() throws Exception {
         command.execute();
     }
-
-
 }

@@ -4,7 +4,6 @@ import commands.*;
 import credit.Credit;
 import credit.Credits;
 import logging.MyLogger;
-import logging.MyFormatter;
 import user.Client;
 import user.Consultant;
 

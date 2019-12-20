@@ -1,7 +1,6 @@
 package logging;
 
 import menu.JavaMailUtil;
-
 import java.util.logging.*;
 
 public class MyLogger {
